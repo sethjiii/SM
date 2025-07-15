@@ -1,5 +1,6 @@
 import { AnimationContainer } from "@/components";
 import React from 'react'
+import { TextReveal } from "@/components/magicui/text-reveal";
 
 const HelpPage = () => {
     return (
@@ -12,6 +13,13 @@ const HelpPage = () => {
                     Need help? We got you.
                 </p>
             </AnimationContainer>
+
+            <TextReveal className="text-foreground text-center text-5xl md:text-xl lg:text-2xl font-medium font-heading z-10">
+                Your brand deserves better.
+                Built to impress and designed with intention,
+                Each website is a digital signature crafted to reflect identity, evoke trust, and hold attention.
+                It’s where clarity meets beauty, and every interaction feels seamless, refined, and undeniably you.
+            </TextReveal>
         </div>
     )
 };

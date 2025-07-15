@@ -13,10 +13,10 @@ interface MarqueeProps {
 export default function Marquee({
     className,
     reverse,
-    pauseOnHover = false,
+    pauseOnHover = true,
     children,
-    vertical = false,
-    repeat = 4,
+    vertical = true,
+    repeat = 1,
     ...props
 }: MarqueeProps) {
     return (

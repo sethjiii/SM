@@ -9,7 +9,7 @@ const ChangeLogPage = () => {
                     Change Log
                 </h1>
                 <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
-                    Stay up to date with the latest changes to our platform.
+                    Stay up to date with the latest changes on our platform.
                 </p>
             </AnimationContainer>
         </div>

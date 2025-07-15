@@ -1,4 +1,4 @@
-import { HelpCircleIcon, LineChartIcon, Link2Icon, LockIcon, NewspaperIcon, QrCodeIcon } from "lucide-react";
+import { BrainCircuitIcon, Code2Icon, HelpCircleIcon, LineChartIcon, Link2Icon, LockIcon, MegaphoneIcon, NewspaperIcon, QrCodeIcon } from "lucide-react";
 
 export const NAV_LINKS = [
     {
@@ -6,37 +6,27 @@ export const NAV_LINKS = [
         href: "/features",
         menu: [
             {
-                title: "Link Shortening",
-                tagline: "Shorten links and track their performance.",
+                title: "Marketing",
+                tagline: "Unleash growth with strategies that sell and stories that stick.",
                 href: "/features/link-shortening",
-                icon: Link2Icon,
+                icon: MegaphoneIcon,
             },
             {
-                title: "Password Protection",
-                tagline: "Secure your links with a password.",
+                title: "Development",
+                tagline: "Build robust, scalable applications with cutting-edge technologies.",
                 href: "/features/password-protection",
-                icon: LockIcon,
+                icon: Code2Icon,
             },
             {
-                title: "Advanced Analytics",
-                tagline: "Gain insights into who is clicking your links.",
+                title: "MarkTech",
+                tagline: "Integrate marketing and technology for seamless user experiences.",
                 href: "/features/analytics",
-                icon: LineChartIcon,
-            },
-            {
-                title: "Custom QR Codes",
-                tagline: "Use QR codes to reach your audience.",
-                href: "/features/qr-codes",
-                icon: QrCodeIcon,
+                icon: BrainCircuitIcon,
             },
         ],
     },
     {
-        title: "Pricing",
-        href: "/pricing",
-    },
-    {
-        title: "Enterprise",
+        title: "Enterprise Solution",
         href: "/enterprise",
     },
     {

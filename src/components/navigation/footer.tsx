@@ -19,14 +19,14 @@ const Footer = () => {
                             Manage your links with ease.
                         </p>
                         <span className="mt-4 text-neutral-200 text-sm flex items-center">
-                            Made by <Link href="https://shreyas-sihasane.vercel.app/" className="font-semibold ml-1">Shreyas</Link>
+                            Made by <Link href="https://sanskarseth.com" className="font-semibold ml-1">Sanskar Seth</Link>
                         </span>
                     </div>
                 </AnimationContainer>
 
                 <div className="grid-cols-2 gap-8 grid mt-16 xl:col-span-2 xl:mt-0">
                     <div className="md:grid md:grid-cols-2 md:gap-8">
-                        <AnimationContainer delay={0.2}>
+                        {/* <AnimationContainer delay={0.2}>
                             <div className="">
                                 <h3 className="text-base font-medium text-white">
                                     Product
@@ -54,7 +54,7 @@ const Footer = () => {
                                     </li>
                                 </ul>
                             </div>
-                        </AnimationContainer>
+                        </AnimationContainer> */}
                         <AnimationContainer delay={0.3}>
                             <div className="mt-10 md:mt-0 flex flex-col">
                                 <h3 className="text-base font-medium text-white">
@@ -73,7 +73,7 @@ const Footer = () => {
                                     </li>
                                     <li className="mt-2">
                                         <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            Twitter
+                                            X
                                         </Link>
                                     </li>
                                     <li className="mt-2">
@@ -137,13 +137,13 @@ const Footer = () => {
             <div className="mt-8 border-t border-border/40 pt-4 md:pt-8 md:flex md:items-center md:justify-between w-full">
                 <AnimationContainer delay={0.6}>
                     <p className="text-sm text-muted-foreground mt-8 md:mt-0">
-                        &copy; {new Date().getFullYear()} Linkify INC. All rights reserved.
+                        &copy; {new Date().getFullYear()} Schmooze Media. All rights reserved.
                     </p>
                 </AnimationContainer>
             </div>
 
-            <div className="h-[20rem] lg:h-[20rem] hidden md:flex items-center justify-center">
-                <TextHoverEffect text="LINKIFY" />
+            <div className="w-full h-[20rem] lg:h-[20rem] hidden md:flex items-center justify-center">
+                <TextHoverEffect text="SCHMOOZE" />
             </div>
         </footer>
     )

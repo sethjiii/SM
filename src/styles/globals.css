@@ -108,3 +108,17 @@ html, body {
 .not-found {
   box-shadow: rgba(150, 18, 226, 0.3) 5px 5px;
 }
+
+/* Vertical scrolling animation */
+@keyframes animate-marquee-vertical {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.animate-marquee-vertical {
+  animation: animate-marquee-vertical var(--duration) linear infinite;
+}

@@ -11,7 +11,6 @@ import {
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { cn, NAV_LINKS } from "@/utils";
-import { useClerk } from "@clerk/nextjs";
 import { LucideIcon, ZapIcon } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useState } from 'react';
@@ -20,8 +19,6 @@ import MobileNavbar from "./mobile-navbar";
 import AnimationContainer from "../global/animation-container";
 
 const Navbar = () => {
-
-    const { user } = useClerk();
 
     const [scroll, setScroll] = useState(false);
 
@@ -50,7 +47,7 @@ const Navbar = () => {
                     <div className="flex items-center space-x-12">
                         <Link href="/#home">
                             <span className="text-lg font-bold font-heading !leading-none">
-                                Linkify
+                                Schmooze Media
                             </span>
                         </Link>
 
@@ -75,10 +72,10 @@ const Navbar = () => {
                                                                         className="flex h-full w-full select-none flex-col justify-end rounded-lg bg-gradient-to-b from-muted/50 to-muted p-4 no-underline outline-none focus:shadow-md"
                                                                     >
                                                                         <h6 className="mb-2 mt-4 text-lg font-medium">
-                                                                            All Features
+                                                                            All Services
                                                                         </h6>
                                                                         <p className="text-sm leading-tight text-muted-foreground">
-                                                                            Manage links, track performance, and more.
+                                                                            Manage Brand, track performance, and more.
                                                                         </p>
                                                                     </Link>
                                                                 </NavigationMenuLink>
@@ -112,23 +109,12 @@ const Navbar = () => {
                     </div>
 
                     <div className="hidden lg:flex items-center">
-                        {user ? (
-                            <div className="flex items-center">
-                                <Link href="/dashboard" className={buttonVariants({ size: "sm", })}>
-                                    Dashboard
-                                </Link>
-                            </div>
-                        ) : (
-                            <div className="flex items-center gap-x-4">
-                                <Link href="/auth/sign-in" className={buttonVariants({ size: "sm", variant: "ghost" })}>
-                                    Sign In
-                                </Link>
-                                <Link href="/auth/sign-up" className={buttonVariants({ size: "sm", })}>
-                                    Get Started
-                                    <ZapIcon className="size-3.5 ml-1.5 text-orange-500 fill-orange-500" />
-                                </Link>
-                            </div>
-                        )}
+                        {/* Removed user-based conditional rendering */}
+                       
+                        <Link href="/auth/sign-up" className={buttonVariants({ size: "sm", })}>
+                            Get Started With Schmooze
+                            <ZapIcon className="size-3.5 ml-1.5 text-orange-500 fill-orange-500" />
+                        </Link>
                     </div>
 
                     <MobileNavbar />
@@ -136,7 +122,7 @@ const Navbar = () => {
                 </MaxWidthWrapper>
             </AnimationContainer>
         </header>
-    )
+    );
 };
 
 const ListItem = React.forwardRef<
@@ -167,8 +153,8 @@ const ListItem = React.forwardRef<
                 </Link>
             </NavigationMenuLink>
         </li>
-    )
-})
-ListItem.displayName = "ListItem"
+    );
+});
+ListItem.displayName = "ListItem";
 
-export default Navbar
+export default Navbar;
