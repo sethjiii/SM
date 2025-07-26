@@ -17,6 +17,7 @@ import React, { useEffect, useState } from 'react';
 import MaxWidthWrapper from "../global/max-width-wrapper";
 import MobileNavbar from "./mobile-navbar";
 import AnimationContainer from "../global/animation-container";
+import { AuroraText } from "../magicui/aurora-text";
 
 const Navbar = () => {
 
@@ -47,7 +48,7 @@ const Navbar = () => {
                     <div className="flex items-center space-x-12">
                         <Link href="/#home">
                             <span className="text-lg font-bold font-heading !leading-none">
-                                Schmooze Media
+                                <AuroraText speed={1.5}> Schmooze </AuroraText> Media
                             </span>
                         </Link>
 

@@ -18,7 +18,7 @@ export const NAV_LINKS = [
                 icon: Code2Icon,
             },
             {
-                title: "MarkTech",
+                title: "MarTech",
                 tagline: "Integrate marketing and technology for seamless user experiences.",
                 href: "/features/analytics",
                 icon: BrainCircuitIcon,
