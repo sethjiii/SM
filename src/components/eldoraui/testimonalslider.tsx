@@ -31,6 +31,7 @@ export default function FancyTestimonialsSlider({
     return () => clearInterval(interval);
   }, [active, autorotate]);
 
+
   const heightFix = () => {
     if (testimonialsRef.current && testimonialsRef.current.parentElement)
       testimonialsRef.current.parentElement.style.height = `${testimonialsRef.current.clientHeight}px`;

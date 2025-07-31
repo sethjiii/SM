@@ -41,8 +41,9 @@ const LinkShorteningPage = () => {
                 <AnimationContainer delay={0.2} className="w-full">
                     <div className="w-full flex max-w-4xl py-10 mx-auto">
                         <TextReveal className="text-foreground text-center text-5xl md:text-xl lg:text-2xl font-medium font-heading z-10 leading-loose">
-                            Harness your brand's immense potential with groundbreaking strategies that forge unforgettable experiences, ignite authentic connections, and drive unparalleled growth. Together, we will transform your vision into a powerful, lasting impact.
+                            Harness your brand&apos;s immense potential with groundbreaking strategies that forge unforgettable experiences, ignite authentic connections, and drive unparalleled growth. Together, we will transform your vision into a powerful, lasting impact.
                         </TextReveal>
+
                     </div>
                 </AnimationContainer>
                 <AnimationContainer delay={0.3} className="w-full">
@@ -97,13 +98,13 @@ const LinkShorteningPage = () => {
                             </h2>
                             <p className="text-muted-foreground mt-6 max-w-lg mx-auto text-base md:text-lg">
                                 We ignite brand momentum through bold ideas, sharp strategy, and magnetic storytelling.
-                                
+
                             </p>
                             <div className="mt-6">
                                 <Button asChild>
                                     <Link href="/auth/sign-up" className="flex items-center">
                                         Get started <Sparkle className="w-4 h-4 ml-2" />
-                                        
+
                                     </Link>
                                 </Button>
                             </div>
