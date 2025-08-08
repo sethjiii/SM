@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { AnimationContainer, Icons } from "@/components"
 import { TextHoverEffect } from "@/components/ui/text-hover-effect"
+import { AuroraText } from '../magicui/aurora-text';
+import { Heart } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -12,49 +14,21 @@ const Footer = () => {
 
                 <AnimationContainer delay={0.1}>
                     <div className="flex flex-col items-start justify-start md:max-w-[200px]">
-                        <div className="flex items-start">
-                            <Icons.logo className="w-7 h-7" />
+                        <div className="flex font-bold items-start">
+                           <AuroraText>Schmooze </AuroraText> Media
                         </div>
                         <p className="text-muted-foreground mt-4 text-sm text-start">
-                            Manage your links with ease.
+                            Manage your Brand with ease.
                         </p>
                         <span className="mt-4 text-neutral-200 text-sm flex items-center">
-                            Made by <Link href="https://sanskarseth.com" className="font-semibold ml-1">Sanskar Seth</Link>
+                            Made with        <Heart fill='red' />
                         </span>
                     </div>
                 </AnimationContainer>
 
                 <div className="grid-cols-2 gap-8 grid mt-16 xl:col-span-2 xl:mt-0">
                     <div className="md:grid md:grid-cols-2 md:gap-8">
-                        {/* <AnimationContainer delay={0.2}>
-                            <div className="">
-                                <h3 className="text-base font-medium text-white">
-                                    Product
-                                </h3>
-                                <ul className="mt-4 text-sm text-muted-foreground">
-                                    <li className="mt-2">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            Features
-                                        </Link>
-                                    </li>
-                                    <li className="mt-2">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            Pricing
-                                        </Link>
-                                    </li>
-                                    <li className="mt-2">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            Testimonials
-                                        </Link>
-                                    </li>
-                                    <li className="mt-2">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            Integration
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </div>
-                        </AnimationContainer> */}
+                        
                         <AnimationContainer delay={0.3}>
                             <div className="mt-10 md:mt-0 flex flex-col">
                                 <h3 className="text-base font-medium text-white">
@@ -62,22 +36,18 @@ const Footer = () => {
                                 </h3>
                                 <ul className="mt-4 text-sm text-muted-foreground">
                                     <li className="">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
+                                        <Link href="https://www.facebook.com/SchmoozeMedia" className="hover:text-foreground transition-all duration-300">
                                             Facebook
                                         </Link>
                                     </li>
                                     <li className="mt-2">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
+                                        <Link href="https://www.instagram.com/schmoozemedia/" className="hover:text-foreground transition-all duration-300">
                                             Instagram
                                         </Link>
                                     </li>
+                                    
                                     <li className="mt-2">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            X
-                                        </Link>
-                                    </li>
-                                    <li className="mt-2">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
+                                        <Link href="https://www.linkedin.com/company/schmooze-media/" className="hover:text-foreground transition-all duration-300">
                                             LinkedIn
                                         </Link>
                                     </li>

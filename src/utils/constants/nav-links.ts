@@ -8,7 +8,7 @@ export const NAV_LINKS = [
             {
                 title: "Marketing",
                 tagline: "Unleash growth with strategies that sell and stories that stick.",
-                href: "/features/link-shortening",
+                href: "/features/marketing",
                 icon: MegaphoneIcon,
             },
             {
@@ -20,14 +20,14 @@ export const NAV_LINKS = [
             {
                 title: "MarTech",
                 tagline: "Integrate marketing and technology for seamless user experiences.",
-                href: "/features/analytics",
+                href: "/features/martech",
                 icon: BrainCircuitIcon,
             },
         ],
     },
     {
-        title: "Enterprise Solution",
-        href: "/enterprise",
+        title: "Idea to 10K",
+        href: "/idea-to-10K",
     },
     {
         title: "Resources",

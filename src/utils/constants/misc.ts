@@ -1,4 +1,6 @@
-import { BarChart3Icon, CloudIcon, Code, CodeIcon, Code2Icon, FolderOpenIcon, WandSparklesIcon, ComputerIcon, BrainCircuit, Search, Megaphone } from "lucide-react";
+import { IconAutomaticGearbox, IconChartLine, IconGrowth } from "@tabler/icons-react";
+import { BarChart3Icon, CloudIcon, Code, CodeIcon, Code2Icon, FolderOpenIcon, WandSparklesIcon, ComputerIcon, BrainCircuit, Search, Megaphone, StepBackIcon, Brain } from "lucide-react";
+import { FaChartBar, FaChartLine, FaDiagnoses } from "react-icons/fa";
 
 export const DEFAULT_AVATAR_URL = "https://api.dicebear.com/8.x/initials/svg?backgroundType=gradientLinear&backgroundRotation=0,360&seed=";
 
@@ -64,6 +66,47 @@ export const PROCESS = [
     },
 ] as const;
 
+export const MarTechProcess = [
+    {
+        title: "Diagnose",
+        description: "We map your existing stack & customer journey",
+        icon: FaDiagnoses,
+    },
+    {
+        title: "Architect",
+        description: "Custom Martech stack that aligns tech with revenue.",
+        icon: WandSparklesIcon,
+    },
+    {
+        title: "Automate",
+        description: "Lead funnels, sequences, CRO, AI personalization.",
+        icon: IconAutomaticGearbox,
+    },
+    {
+        title: "Optimize",
+        description: "Dashboards, heatmaps, A/B testing, KPI loops.",
+        icon: BrainCircuit,
+    },
+] as const;
+
+export const Ideato10KPillar = [
+    {
+        title: "Technology",
+        description: "MVPs That Scale Like They Matter. We don't build demo apps. We build lean, loud, and launch-ready products — with architecture that doesn’t panic when your tweet goes viral. Think clean code, real performance, and features your users actually touch.",
+        icon: CodeIcon,
+    },
+    {
+        title: "Growth",
+        description: "Go-to-Market With Teeth We don't Forget “soft launches.” We build noise-generating, funnel-optimizing, conversion-obsessing systems that turn visitors into users, and users into fans. Launch campaigns, viral loops, creator collabs — all custom to your niche, all measurable.",
+        icon: IconChartLine,
+    },
+    {
+        title: "MarTech",
+        description: "MarTech Lead funnels, sequences, CRO, AI personalization. Most agencies ignore what happens after the click. Not us. We wire up every touchpoint with analytics, heatmaps, behavioral triggers, and lifecycle flows that work while you sleep. You get clarity, not guesswork.",
+        icon: Brain,
+    },
+] as const;
+
 export const FEATURES = [
     {
         title: "Marketing",
@@ -77,31 +120,62 @@ export const FEATURES = [
         title: "MarkTech",
         description: "Integrate marketing and technology for seamless user experiences.",
     },
-    
+
 ] as const;
 
+export const data = [
+    {
+      title: "Week 1–2: Pressure Test",
+      content: (
+        
+          "We rip your idea apart. Rebuild the value prop. Test assumptions with Typeform + survey ads."
+      
+      ),
+    },
+    {
+      title: "Week 3–5: Build for Launch, Not Perfection",
+      content: (
+
+          "We ship fast. MVP is mobile-ready, branded, and built to capture feedback and emails."
+
+      ),
+    },
+    {
+      title: "Week 6–7: Loud Launch",
+      content: (
+          "Product Hunt drop, pre-warm email list, performance ads, waitlist trigger sequences, influencers in niche communities."
+      ),
+    },
+    {
+      title: "Week 8–12: The Feedback Flywheel",
+      content: (
+          "Track. Retarget. Email based on behavior. Feature requests. A/B test headlines. Turn users into ambassadors."
+      ),
+    },
+  ] as const;
+
 export const Testimonials = [
-  {
-    img: "https://randomuser.me/api/portraits/men/1.jpg", // This is the avatar
-    quote: "This tool is a lifesaver! Managing and tracking my links has never been easier. A must-have for anyone dealing with numerous links.", // Review text
-    name: "Sanskar Seth", // Name of the reviewer
-    role: "User", // You can set a default role or add the actual role if available
-    username: "@michaelsmith", // Username of the reviewer
-  },
-  {
-    img: "https://randomuser.me/api/portraits/women/1.jpg",
-    quote: "Very useful app! It has streamlined my workflow considerably. A few minor bugs, but overall a great experience.",
-    name: "Ankit Tanwar",
-    role: "User",
-    username: "@ankittanwar",
-  },
-  {
-    img: "https://randomuser.me/api/portraits/men/2.jpg",
-    quote: "I've been using this app daily for months. The insights and analytics it provides are invaluable. Highly recommend it!",
-    name: "Ashish Trivedi",
-    role: "User",
-    username: "@ashishtrivedi",
-  },
-  // Add other reviews similarly...
+    {
+        img: "https://randomuser.me/api/portraits/men/1.jpg", // This is the avatar
+        quote: "This tool is a lifesaver! Managing and tracking my links has never been easier. A must-have for anyone dealing with numerous links.", // Review text
+        name: "Sanskar Seth", // Name of the reviewer
+        role: "User", // You can set a default role or add the actual role if available
+        username: "@michaelsmith", // Username of the reviewer
+    },
+    {
+        img: "https://randomuser.me/api/portraits/women/1.jpg",
+        quote: "Very useful app! It has streamlined my workflow considerably. A few minor bugs, but overall a great experience.",
+        name: "Ankit Tanwar",
+        role: "User",
+        username: "@ankittanwar",
+    },
+    {
+        img: "https://randomuser.me/api/portraits/men/2.jpg",
+        quote: "I've been using this app daily for months. The insights and analytics it provides are invaluable. Highly recommend it!",
+        name: "Ashish Trivedi",
+        role: "User",
+        username: "@ashishtrivedi",
+    },
+    // Add other reviews similarly...
 ] as const;
 

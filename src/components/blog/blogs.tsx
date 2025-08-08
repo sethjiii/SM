@@ -1,43 +1,76 @@
 import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
-import Image from 'next/image';
+import Image from "next/image";
 import Link from "next/link";
 import MagicCard from "../ui/magic-card";
 import blogs from "@/utils/constants/blogs.json";
+import MaxWidthWrapper from "../global/max-width-wrapper";
 
 const Blogs = () => {
     return (
-        <div className="flex flex-col items-center justify-center max-w-6xl mx-auto px-4 md:px-0">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {blogs.map((blog, id) => (
-                    <MagicCard key={id} className="p-0 md:p-0 relative">
-                        <Link href={`/resources/blog/${blog.slug}`} className="w-full h-full absolute -z-1 inset-0"></Link>
-                        <Card className="group border-0">
-                            <CardContent className="p-4 lg:p-6">
-                                <div className="flex items-center justify-center h-40 lg:h-52 overflow-hidden">
-                                    <Image
-                                        src={blog.image}
-                                        alt={blog.title}
-                                        width={1024}
-                                        height={1024}
-                                        unoptimized
-                                        className="w-full h-full object-cover rounded-lg"
-                                    />
-                                </div>
-                                <div className="flex flex-col items-start justify-start mt-4">
-                                    <CardTitle className="text-lg font-semibold text-foreground/80 group-hover:text-foreground transition-all duration-300">
-                                        {blog.title}
-                                    </CardTitle>
-                                    <CardDescription className="mt-2">
-                                        {blog.description.length > 100 ? `${blog.description.substring(0, 100)}...` : blog.description}
-                                    </CardDescription>
-                                </div>
-                            </CardContent>
-                        </Card>
-                    </MagicCard>
-                ))}
-            </div>
-        </div>
-    )
+        <section className="bg-gradient-to-b from-background via-muted/20 to-background py-16">
+            <MaxWidthWrapper>
+                {/* Heading */}
+                <div className="text-center mb-14">
+                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
+                        Our Latest <span className="text-primary">Blogs</span>
+                    </h2>
+                    <p className="mt-3 text-muted-foreground max-w-xl mx-auto">
+                        Stay updated with fresh insights, resources, and tips from our team.
+                    </p>
+                </div>
+
+                {/* Blog Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {blogs.map((blog, id) => {
+                        // Ensure preview text is always a string
+                        const previewText = Array.isArray(blog.intro) && blog.intro.length > 0
+                            ? blog.intro.join(" ")
+                            : 'content' in blog.sections?.[0]
+                                ? blog.sections?.[0].content.join(" ")
+                                : "";
+
+                        return (
+                            <MagicCard
+                                key={id}
+                                className="p-0 md:p-0 relative rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300"
+                            >
+                                <Link
+                                    href={`/resources/blog/${blog.slug}`}
+                                    className="absolute inset-0 z-10"
+                                />
+                                <Card className="group border-0 bg-card hover:bg-card/95 transition-all duration-300">
+                                    <div className="overflow-hidden h-48">
+                                        <Image
+                                            src={blog.image || '/default-image.jpg'} // add a default value
+                                            alt={blog.title || "Blog Image"}
+                                            width={1024}
+                                            height={1024}
+                                            unoptimized
+                                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                        />
+                                    </div>
+
+                                    <CardContent className="p-5 flex flex-col">
+                                        <CardTitle className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
+                                            {blog.title}
+                                        </CardTitle>
+                                        <CardDescription className="mt-2 text-muted-foreground leading-relaxed">
+                                            {previewText.length > 100
+                                                ? `${previewText.substring(0, 100)}...`
+                                                : previewText}
+                                        </CardDescription>
+                                        <span className="mt-4 inline-block text-primary font-medium group-hover:underline">
+                                            Read More →
+                                        </span>
+                                    </CardContent>
+                                </Card>
+                            </MagicCard>
+                        );
+                    })}
+                </div>
+            </MaxWidthWrapper>
+        </section>
+    );
 };
 
-export default Blogs
+export default Blogs;

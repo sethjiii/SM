@@ -11,7 +11,7 @@ import Link from "next/link";
 import { AnimatedServices } from "@/components/ui/AnimatedServices";
 import { services } from "@/utils/constants/services";
 
-const LinkShorteningPage = () => {
+const MarketingPage = () => {
     return (
         <>
             <MaxWidthWrapper>
@@ -25,12 +25,12 @@ const LinkShorteningPage = () => {
                             Comprehensive Marketing Solutions: Product Placements, Branded Content, PR, Reputation Management & Paid Media.
                         </p>
                         <div className="flex items-center justify-center gap-x-4 mt-8">
-                            <Button size="sm" asChild>
+                            <Button asChild>
                                 <Link href="/dashboard">
                                     Get started
                                 </Link>
                             </Button>
-                            <Button size="sm" variant="outline" asChild>
+                            <Button variant="outline" asChild>
                                 <Link href="/blog">
                                     Learn more
                                 </Link>
@@ -116,4 +116,4 @@ const LinkShorteningPage = () => {
     )
 };
 
-export default LinkShorteningPage
+export default MarketingPage
