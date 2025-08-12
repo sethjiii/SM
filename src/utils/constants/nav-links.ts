@@ -14,7 +14,7 @@ export const NAV_LINKS = [
             {
                 title: "Development",
                 tagline: "Build robust, scalable applications with cutting-edge technologies.",
-                href: "/features/password-protection",
+                href: "/features/development",
                 icon: Code2Icon,
             },
             {

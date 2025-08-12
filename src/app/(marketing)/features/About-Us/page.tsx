@@ -7,7 +7,7 @@ import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const LinkShorteningPage = () => {
+const AboutUs = () => {
     return (
         <>
             <MaxWidthWrapper>
@@ -97,4 +97,4 @@ const LinkShorteningPage = () => {
     )
 };
 
-export default LinkShorteningPage
+export default AboutUs

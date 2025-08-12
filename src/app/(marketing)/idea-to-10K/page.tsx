@@ -36,12 +36,12 @@ const Ideato10KPage = () => {
                             </button>
                             <h1 className="text-foreground text-center py-6 text-5xl font-medium tracking-normal text-balance sm:text-4xl md:text-5xl lg:text-6xl !leading-[1.15] w-full font-heading">
                                 The startup world doesn’t need another MVP.
-                                <br />It needs more <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text inline-block">Traction</span>
+                                <br />It needs more <AuroraText speed={0.5}>Traction</AuroraText>.
                             </h1>
                             <p className="mb-5 text-lg tracking-tight text-foreground md:text-xl text-balance">
                                 We don’t hand you code and wish you luck.
                                 We hand you users. Early fans. Real growth. Real data.
-                                That’s the <AuroraText speed={0.5}>Schmooze</AuroraText> effect.
+                                That’s the <AuroraText speed={0.2}>Schmooze</AuroraText> effect.
                                 <br className="hidden md:block" />
                                 <br />
                             </p>

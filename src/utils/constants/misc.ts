@@ -1,5 +1,5 @@
 import { IconAutomaticGearbox, IconChartLine, IconGrowth } from "@tabler/icons-react";
-import { BarChart3Icon, CloudIcon, Code, CodeIcon, Code2Icon, FolderOpenIcon, WandSparklesIcon, ComputerIcon, BrainCircuit, Search, Megaphone, StepBackIcon, Brain } from "lucide-react";
+import { BarChartIcon , BarChart3Icon, SmartphoneIcon, CloudIcon, Code,  CloudCogIcon,CodeIcon, Code2Icon, CheckCircleIcon,LayersIcon ,FolderOpenIcon, WandSparklesIcon, ComputerIcon, BrainCircuit, Search, Megaphone, StepBackIcon, Brain, TrendingUpIcon, ZapIcon, ShieldCheck, LayoutIcon, RocketIcon, NetworkIcon, ShoppingCartIcon, RefreshCcwIcon, DatabaseIcon, ServerIcon, CreditCardIcon, BlocksIcon, Dice1Icon } from "lucide-react";
 import { FaChartBar, FaChartLine, FaDiagnoses } from "react-icons/fa";
 
 export const DEFAULT_AVATAR_URL = "https://api.dicebear.com/8.x/initials/svg?backgroundType=gradientLinear&backgroundRotation=0,360&seed=";
@@ -66,6 +66,105 @@ export const PROCESS = [
     },
 ] as const;
 
+export const DEVSERVICES = [
+    {
+        title: "SaaS Development",
+        description: "Scalable SaaS apps for side income and business efficiency.",
+        icon: CloudIcon,
+    },
+    {
+        title: "Website Development",
+        description: "Create concise, branded links that are easy to share and track.",
+        icon: Code2Icon,
+    },
+    {
+        title: "API Development",
+        description: "Build robust APIs for seamless integration with your applications.",
+        icon: ComputerIcon,
+    },
+    {
+        title: "AI Agent Development",
+        description: "Develop AI agents for automation and enhanced user experiences.",
+        icon: BrainCircuit,
+    },
+    {
+        title: "Custom Web Applications",
+        description: "From SaaS to internal tools, we craft solutions tailored to your needs.",
+        icon: LayoutIcon,
+    },
+    {
+        title: "MVP Development",
+        description: "Launch fast, learn faster with rapid prototyping and iteration.",
+        icon: RocketIcon,
+    },
+    {
+        title: "API Development & Integrations",
+        description: "Connecting your ecosystem with seamless data and service flows.",
+        icon: NetworkIcon,
+    },
+    {
+        title: "E-Commerce Platforms",
+        description: "Conversion-focused & scalable online stores that grow with you.",
+        icon: ShoppingCartIcon,
+    },
+    {
+        title: "Mobile-Ready Solutions",
+        description: "Progressive web apps & responsive design for every device.",
+        icon: SmartphoneIcon,
+    },
+    {
+        title: "AI/ML Powered Analytics",
+        description: "Unlock insights with AI/ML-driven data analytics and predictions.",
+        icon: BarChartIcon,
+    },
+    {
+        title: "Digital Transformation",
+        description: "End-to-end strategies to modernize and grow your business.",
+        icon: RefreshCcwIcon,
+    },
+    {
+        title: "Data Migration & Automation",
+        description: "Seamless migration and automation for efficiency and accuracy.",
+        icon: DatabaseIcon,
+    },
+    {
+        title: "Data Engineering",
+        description: "Build reliable pipelines and architectures for large-scale data.",
+        icon: ServerIcon,
+    },
+    {
+        title: "Point Of Sale",
+        description: "Smart, integrated POS solutions for streamlined transactions.",
+        icon: CreditCardIcon,
+    },
+    {
+        title: "Blockchain",
+        description: "Secure and transparent blockchain-based solutions.",
+        icon: BlocksIcon,
+    },
+    {
+        title: "ERP & ECM",
+        description: "Comprehensive systems for managing business processes and content.",
+        icon: LayersIcon,
+    },
+    {
+        title: "Quality Assurance",
+        description: "Rigorous testing to ensure performance, reliability, and usability.",
+        icon: CheckCircleIcon,
+    },
+    {
+        title: "3D/AR/VR",
+        description: "Immersive experiences that engage and inspire.",
+        icon: Dice1Icon,
+    },
+    {
+        title: "DevOps & Cloud Consulting",
+        description: "Optimize deployment pipelines and scale with cloud-native solutions.",
+        icon: CloudCogIcon,
+    },
+] as const;
+
+
 export const MarTechProcess = [
     {
         title: "Diagnose",
@@ -87,6 +186,25 @@ export const MarTechProcess = [
         description: "Dashboards, heatmaps, A/B testing, KPI loops.",
         icon: BrainCircuit,
     },
+] as const;
+
+   export const DevelopmentPhilosophy = [
+    {
+        title: "Scalable First",
+        description: "Architected to grow with your business.",
+        icon: TrendingUpIcon,
+    },
+    {
+        title: "Performance-Driven",
+        description: "Optimized for speed & responsiveness.",
+        icon: ZapIcon,
+    },
+    {
+        title: "Future-Proof",
+        description: "Built on modern, proven stacks.",
+        icon: ShieldCheck,
+    },
+    
 ] as const;
 
 export const Ideato10KPillar = [
@@ -176,6 +294,7 @@ export const Testimonials = [
         role: "User",
         username: "@ashishtrivedi",
     },
+
     // Add other reviews similarly...
 ] as const;
 

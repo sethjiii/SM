@@ -82,7 +82,7 @@ const Footer = () => {
                                 </h3>
                                 <ul className="mt-4 text-sm text-muted-foreground">
                                     <li className="">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
+                                        <Link href="/About-Us" className="hover:text-foreground transition-all duration-300">
                                             About Us
                                         </Link>
                                     </li>
