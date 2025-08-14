@@ -3,14 +3,17 @@ import { TextReveal } from "@/components/magicui/text-reveal";
 import { Button } from "@/components/ui/button";
 import { LampContainer } from "@/components/ui/lamp";
 import MagicBadge from "@/components/ui/magic-badge";
-import { COMPANIES, DevelopmentPhilosophy, DEVSERVICES } from "@/utils/constants/misc";
+import { COMPANIES, DevelopmentPhilosophy, developmentSteps, DEVSERVICES } from "@/utils/constants/misc";
 import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Cover } from "@/components/ui/cover";
 import MagicCard from "@/components/ui/magic-card";
+import { DevelopmentTimeline } from "@/components/ui/developmentSteps";
+import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
 
-const LinkShorteningPage = () => {
+
+const DevelopmentPage = () => {
     return (
         <>
             <MaxWidthWrapper>
@@ -140,23 +143,32 @@ const LinkShorteningPage = () => {
                     ))}
                 </div>
             </MaxWidthWrapper>
-
-            
+            <VelocityScroll defaultVelocity={0.5} className="inset-0 mt-16">
+                           From Scribble to Ship
+                        </VelocityScroll>
+                       
+            <MaxWidthWrapper className="mt-10">
+                <AnimationContainer delay={0.7}>
+                    <div>
+                        <DevelopmentTimeline developmentSteps={developmentSteps.slice()} />
+                    </div>
+                </AnimationContainer>
+            </MaxWidthWrapper>
 
             <MaxWidthWrapper className="pt-20">
                 <AnimationContainer delay={0.4} className="w-full">
                     <LampContainer className="max-w-2xl mx-auto">
                         <div className="flex flex-col items-center justify-center relative w-full text-center">
                             <h2 className="bg-gradient-to-br from-neutral-300 to-neutral-500 py-4 bg-clip-text text-center text-4xl font-semibold font-heading tracking-tight text-transparent md:text-7xl mt-8">
-                                Powerup your link strategy
+                                Let’s Build Yours
                             </h2>
                             <p className="text-muted-foreground mt-6 max-w-lg mx-auto text-base md:text-lg">
-                                Take control of your links with advanced features and real-time insights. Simplify your workflow and achieve more.
+                                Your product won’t build itself. But we can build it faster, smarter, and stronger than anyone else.
                             </p>
                             <div className="mt-6">
                                 <Button asChild>
-                                    <Link href="/auth/sign-up" className="flex items-center">
-                                        Get started for free
+                                    <Link href="/help" className="flex items-center">
+                                        Let's Start Building
                                         <ArrowRightIcon className="w-4 h-4 ml-2" />
                                     </Link>
                                 </Button>
@@ -169,4 +181,4 @@ const LinkShorteningPage = () => {
     )
 };
 
-export default LinkShorteningPage
+export default DevelopmentPage;

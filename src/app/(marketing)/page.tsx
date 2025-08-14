@@ -97,13 +97,13 @@ const HomePage = () => {
                     </AnimationContainer>
                 </div>
                 <AnimationContainer delay={0.2} className="relative py-24 bg-transparent w-full items-center justify-center">
-                   
+
                     <MagicBadge title="🤔 What is SM" />
                     <div className="absolute left-1/2 gradient w-3/4 -translate-x-1/2 h-1/4 md:h-1/3 inset-0 blur-[5rem] animate-image-glow"></div>
-                    <TextGenerateEffect 
-                    className="text-foreground text-center text-5xl md:text-xl lg:text-2xl font-medium font-heading z-10 pb-20"
-                    words="Your brand deserves better. Built to impress and designed with intention, Each website is a digital signature crafted to reflect identity, evoke trust, and hold attention. It’s where clarity meets beauty, and every interaction feels seamless, refined, and undeniably you." 
-                    filter={true}
+                    <TextGenerateEffect
+                        className="text-foreground text-center text-5xl md:text-xl lg:text-2xl font-medium font-heading z-10 pb-20"
+                        words="Your brand deserves better. Built to impress and designed with intention, Each website is a digital signature crafted to reflect identity, evoke trust, and hold attention. It’s where clarity meets beauty, and every interaction feels seamless, refined, and undeniably you."
+                        filter={true}
                     />
 
                 </AnimationContainer>
@@ -282,31 +282,31 @@ const HomePage = () => {
                 </div>
             </div>
 
-
-            <AnimationContainer delay={0.3}>
-                <div className="mt-20 w-full">
-                    <div className="flex flex-col items-center justify-center w-full pt-12">
-                        <h2 className="mt-6 text-2xl font-semibold text-center lg:text-3xl xl:text-4xl">
-                            Frequently Asked Questions
-                        </h2>
-                        <p className="max-w-lg mt-6 text-center text-neutral-500">
-                            Here are some of the most common questions we get asked. If you have a question that isn&apos;t answered here, feel free to reach out to us.
-                        </p>
+            <MaxWidthWrapper>
+                <AnimationContainer delay={0.3}>
+                    <div className="mt-20 w-full">
+                        <div className="flex flex-col items-center justify-center w-full pt-12">
+                            <h2 className="mt-6 text-2xl font-semibold text-center lg:text-3xl xl:text-4xl">
+                                Frequently Asked Questions
+                            </h2>
+                            <p className="max-w-lg mt-6 text-center text-neutral-500">
+                                Here are some of the most common questions we get asked. If you have a question that isn&apos;t answered here, feel free to reach out to us.
+                            </p>
+                        </div>
+                        <div className="max-w-3xl mx-auto w-full mt-20">
+                            <Accordion type="single" collapsible>
+                                {FAQ.map((faq) => (
+                                    <AccordionItem key={faq.id} value={faq.id}>
+                                        <AccordionTrigger>{faq.question}</AccordionTrigger>
+                                        <AccordionContent>{faq.answer}</AccordionContent>
+                                    </AccordionItem>
+                                ))}
+                            </Accordion>
+                        </div>
                     </div>
-                    <div className="max-w-3xl mx-auto w-full mt-20">
-                        <Accordion type="single" collapsible>
-                            {FAQ.map((faq) => (
-                                <AccordionItem key={faq.id} value={faq.id}>
-                                    <AccordionTrigger>{faq.question}</AccordionTrigger>
-                                    <AccordionContent>{faq.answer}</AccordionContent>
-                                </AccordionItem>
-                            ))}
-                        </Accordion>
-                    </div>
-                </div>
-            </AnimationContainer>
-
-
+                </AnimationContainer>
+            </MaxWidthWrapper>
+            
             {/* CTA Section */}
             <MaxWidthWrapper className="mt-20 max-w-[100vw] overflow-x-hidden scrollbar-hide">
                 <AnimationContainer delay={0.1}>

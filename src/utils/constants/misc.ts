@@ -1,5 +1,5 @@
 import { IconAutomaticGearbox, IconChartLine, IconGrowth } from "@tabler/icons-react";
-import { BarChartIcon , BarChart3Icon, SmartphoneIcon, CloudIcon, Code,  CloudCogIcon,CodeIcon, Code2Icon, CheckCircleIcon,LayersIcon ,FolderOpenIcon, WandSparklesIcon, ComputerIcon, BrainCircuit, Search, Megaphone, StepBackIcon, Brain, TrendingUpIcon, ZapIcon, ShieldCheck, LayoutIcon, RocketIcon, NetworkIcon, ShoppingCartIcon, RefreshCcwIcon, DatabaseIcon, ServerIcon, CreditCardIcon, BlocksIcon, Dice1Icon } from "lucide-react";
+import { BarChartIcon, BarChart3Icon, SmartphoneIcon, CloudIcon, Code, CloudCogIcon, CodeIcon, Code2Icon, CheckCircleIcon, LayersIcon, FolderOpenIcon, WandSparklesIcon, ComputerIcon, BrainCircuit, Search, Megaphone, StepBackIcon, Brain, TrendingUpIcon, ZapIcon, ShieldCheck, LayoutIcon, RocketIcon, NetworkIcon, ShoppingCartIcon, RefreshCcwIcon, DatabaseIcon, ServerIcon, CreditCardIcon, BlocksIcon, Dice1Icon } from "lucide-react";
 import { FaChartBar, FaChartLine, FaDiagnoses } from "react-icons/fa";
 
 export const DEFAULT_AVATAR_URL = "https://api.dicebear.com/8.x/initials/svg?backgroundType=gradientLinear&backgroundRotation=0,360&seed=";
@@ -188,7 +188,7 @@ export const MarTechProcess = [
     },
 ] as const;
 
-   export const DevelopmentPhilosophy = [
+export const DevelopmentPhilosophy = [
     {
         title: "Scalable First",
         description: "Architected to grow with your business.",
@@ -204,7 +204,7 @@ export const MarTechProcess = [
         description: "Built on modern, proven stacks.",
         icon: ShieldCheck,
     },
-    
+
 ] as const;
 
 export const Ideato10KPillar = [
@@ -243,34 +243,62 @@ export const FEATURES = [
 
 export const data = [
     {
-      title: "Week 1–2: Pressure Test",
-      content: (
-        
-          "We rip your idea apart. Rebuild the value prop. Test assumptions with Typeform + survey ads."
-      
-      ),
-    },
-    {
-      title: "Week 3–5: Build for Launch, Not Perfection",
-      content: (
+        title: "Week 1–2: Pressure Test",
+        content: (
 
-          "We ship fast. MVP is mobile-ready, branded, and built to capture feedback and emails."
+            "We rip your idea apart. Rebuild the value prop. Test assumptions with Typeform + survey ads."
 
-      ),
+        ),
     },
     {
-      title: "Week 6–7: Loud Launch",
-      content: (
-          "Product Hunt drop, pre-warm email list, performance ads, waitlist trigger sequences, influencers in niche communities."
-      ),
+        title: "Week 3–5: Build for Launch, Not Perfection",
+        content: (
+
+            "We ship fast. MVP is mobile-ready, branded, and built to capture feedback and emails."
+
+        ),
     },
     {
-      title: "Week 8–12: The Feedback Flywheel",
-      content: (
-          "Track. Retarget. Email based on behavior. Feature requests. A/B test headlines. Turn users into ambassadors."
-      ),
+        title: "Week 6–7: Loud Launch",
+        content: (
+            "Product Hunt drop, pre-warm email list, performance ads, waitlist trigger sequences, influencers in niche communities."
+        ),
     },
-  ] as const;
+    {
+        title: "Week 8–12: The Feedback Flywheel",
+        content: (
+            "Track. Retarget. Email based on behavior. Feature requests. A/B test headlines. Turn users into ambassadors."
+        ),
+    },
+] as const;
+
+export const developmentSteps = [
+    {
+        title: "Step 1: Discovery",
+        content: ("Deep dive into your problem."),
+    },
+    {
+        title: "Step 2: Architecture",
+        content: ("Decide on stack, flow, and integrations."),
+    },
+    {
+        title: "Step 3: Design",
+        content: ("UX first, UI that sings."),
+    },
+    {
+        title: "Step 4: Development",
+        content: ("Clean, modular, test-driven code."),
+    },
+    {
+        title: "Step 5: Launch",
+        content: ("Deploy with tracking and monitoring."),
+    },
+    {
+        title: "Step 6: Support",
+        content: ("Updates, improvements, and scaling."),
+    },
+] as const;
+
 
 export const Testimonials = [
     {

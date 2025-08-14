@@ -8,7 +8,7 @@ export const TextHoverEffect = ({
 }: {
     text: string;
     duration?: number;
-    automatic?: boolean;
+    automatic?: true;
 }) => {
     const svgRef = useRef<SVGSVGElement>(null);
     const [cursor, setCursor] = useState({ x: 0, y: 0 });
