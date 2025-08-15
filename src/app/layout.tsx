@@ -3,6 +3,7 @@ import AnimatedBackground from "@/components/ui/animated-background";
 import { Toaster } from "@/components/ui/sonner";
 import "@/styles/globals.css";
 import { aeonik, cn, generateMetadata, inter } from "@/utils";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = generateMetadata();
 
@@ -20,6 +21,7 @@ export default function RootLayout({
                     inter.variable,
                 )}
             >
+                <Analytics />
                 <Providers>
                     <Toaster richColors theme="dark" position="top-right" />
                     {children}
