@@ -1,5 +1,4 @@
-import { AnimationContainer, MaxWidthWrapper, PricingCards } from "@/components";
-import { BorderBeam } from "@/components/ui/border-beam";
+import { AnimationContainer, MaxWidthWrapper } from "@/components";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { LampContainer } from "@/components/ui/lamp";
@@ -7,15 +6,13 @@ import MagicBadge from "@/components/ui/magic-badge";
 import MagicCard from "@/components/ui/magic-card";
 import { COMPANIES, PROCESS } from "@/utils";
 import { Testimonials } from "@/utils/constants/misc";
-import { ArrowRightIcon, CreditCardIcon, PhoneCallIcon, StarIcon } from "lucide-react";
+import { ArrowRightIcon, PhoneCallIcon} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { TextReveal } from "@/components/magicui/text-reveal";
 import { Cover } from "@/components/ui/cover";
 import { ThreeDMarquee } from "@/components/ui/3d-marquee";
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
 import { AuroraText } from "@/components/magicui/aurora-text";
-import { PinContainer } from "@/components/ui/3d-pin";
 import { FAQ } from "@/utils/constants/faq";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import TestimonialsSlider from "@/components/eldoraui/testimonalslider";
@@ -78,7 +75,7 @@ const HomePage = () => {
                             </span>
                         </button>
                         <h1 className="text-foreground text-center py-6 text-5xl font-medium tracking-normal text-balance sm:text-6xl md:text-7xl lg:text-8xl !leading-[1.15] w-full font-heading">
-                            We are custodians of <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text inline-block">Reputation</span>
+                            "We Build. We Automate. We Market. You <AuroraText>Grow</AuroraText>".
                         </h1>
                         <p className="mb-12 text-lg tracking-tight text-muted-foreground md:text-xl text-balance">
                             Brand engagement is constant online, making it easy to lose sight of reputation management.
@@ -210,7 +207,7 @@ const HomePage = () => {
                     Executed
                 </h2>
                 <p className="relative z-20 mx-auto max-w-2xl py-8 text-center text-sm text-neutral-200 md:text-base">
-                    Each project is a reflection of clarity, craft, and bold ambition — websites built to perform and made to inspire.
+                    Each project is a reflection of clarity, craft, and bold ambition — marketing that captivates, MarTech that automates, and development that delivers websites built to perform and made to inspire.
                 </p>
 
                 <div className="relative z-20 flex flex-wrap items-center justify-center gap-4 pt-4">

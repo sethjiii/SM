@@ -1,24 +1,24 @@
 import { Metadata } from "next";
 
 export const generateMetadata = ({
-    title = `${process.env.NEXT_PUBLIC_APP_NAME} - The Link Management Platform for Businesses`,
-    description = `${process.env.NEXT_PUBLIC_APP_NAME} is the link management platform for businesses. It helps you build, brand, and track your links.`,
-    image = "/thumbnail.png",
+    title = `Schmooze Media – From Idea to First 10K Users & Beyond`,
+    description = `Schmooze Media is your full-stack growth partner. We combine MVP development, data-driven marketing, and MarTech automation to take your idea from zero to scalable traction.`,
+    image = "/og-image.jpg",
     icons = [
         {
             rel: "apple-touch-icon",
-            sizes: "32x32",
+            sizes: "180x180",
             url: "/apple-touch-icon.png"
         },
         {
             rel: "icon",
             sizes: "32x32",
-            url: "/favicon-32x32.png"
+            url: "/favicon.ico"
         },
         {
             rel: "icon",
             sizes: "16x16",
-            url: "/favicon-16x16.png"
+            url: "/favicon.ico"
         },
     ],
     noIndex = false
@@ -36,13 +36,16 @@ export const generateMetadata = ({
         title,
         description,
         ...(image && { images: [{ url: image }] }),
+        type: "website",
+        locale: "en_US",
+        siteName: "Schmooze Media"
     },
     twitter: {
         title,
         description,
         ...(image && { card: "summary_large_image", images: [image] }),
-        creator: "@sanskarseth",
+        creator: "@SchmoozeMedia",
     },
-    // metadataBase: new URL(process.env.APP_DOMAIN!),
+    metadataBase: new URL("https://schmoozemedia.com"),
     ...(noIndex && { robots: { index: false, follow: false } }),
 });

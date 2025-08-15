@@ -81,11 +81,11 @@ const Footer = () => {
                                     Company
                                 </h3>
                                 <ul className="mt-4 text-sm text-muted-foreground">
-                                    <li className="">
+                                    {/* <li className="">
                                         <Link href="/About-Us" className="hover:text-foreground transition-all duration-300">
                                             About Us
                                         </Link>
-                                    </li>
+                                    </li> */}
                                     <li className="mt-2">
                                         <Link href="/privacy" className="hover:text-foreground transition-all duration-300">
                                             Privacy Policy

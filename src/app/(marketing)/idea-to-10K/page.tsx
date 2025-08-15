@@ -47,11 +47,11 @@ const Ideato10KPage = () => {
                             </p>
                             <div className="flex items-center justify-center gap-x-4 mt-8">
                                 <Button asChild>
-                                    <Link href="/"> What’s your idea?</Link>
+                                    <Link href="/resources/help"> What’s your idea?</Link>
                                 </Button>
-                                <Button asChild>
+                                {/* <Button asChild>
                                     <Link href="/">When do you want your first 1K users?</Link>
-                                </Button>
+                                </Button> */}
                             </div>
                         </AnimationContainer>
                     </div>

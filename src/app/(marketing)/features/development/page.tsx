@@ -28,15 +28,15 @@ const DevelopmentPage = () => {
                         </p>
                         <div className="flex items-center justify-center gap-x-4 mt-8">
                             <Button size="sm" asChild>
-                                <Link href="/dashboard">
+                                <Link href="/resources/help">
                                     Start Your Project →
                                 </Link>
                             </Button>
-                            <Button size="sm" variant="outline" asChild>
+                            {/* <Button size="sm" variant="outline" asChild>
                                 <Link href="/blog">
                                     See Our Work →
                                 </Link>
-                            </Button>
+                            </Button> */}
                         </div>
                     </div>
                 </AnimationContainer>
@@ -167,7 +167,7 @@ const DevelopmentPage = () => {
                             </p>
                             <div className="mt-6">
                                 <Button asChild>
-                                    <Link href="/help" className="flex items-center">
+                                    <Link href="/resources/help" className="flex items-center">
                                         Let's Start Building
                                         <ArrowRightIcon className="w-4 h-4 ml-2" />
                                     </Link>

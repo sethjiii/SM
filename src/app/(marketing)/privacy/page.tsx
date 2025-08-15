@@ -1,181 +1,178 @@
 import { AnimationContainer, MaxWidthWrapper } from "@/components";
-import React from 'react';
+import React from "react";
 
 const Privacy = () => {
-    return (
-        <MaxWidthWrapper className="max-w-3xl mx-auto px-8 mb-40">
-            <AnimationContainer delay={0.1} className="w-full">
-                <h1 className="text-4xl md:text-6xl font-heading font-bold my-12 text-center w-full">
-                    Privacy Policy
-                </h1>
-                <p className="text-sm mb-2 italic mt-20">
-                    Last updated: 17th June 2024
-                </p>
-                <p className="mt-4">
-                    At <strong>Linkify</strong>, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website and services.
-                </p>
+  return (
+    <MaxWidthWrapper className="max-w-3xl mx-auto px-8 mb-40">
+      <AnimationContainer delay={0.1} className="w-full">
+        <h1 className="text-4xl md:text-6xl font-heading font-bold my-12 text-center w-full">
+          Privacy Policy
+        </h1>
+        <p className="text-sm mb-2 italic mt-20">
+          Last updated: 14th August 2025
+        </p>
+        <p className="mt-4">
+          At <strong>Schmooze Media</strong>, your privacy matters to us.
+          Whether you’re browsing our site, exploring our services, or becoming
+          a client, we’re committed to safeguarding your data and being fully
+          transparent about how it’s collected, used, and protected.
+        </p>
 
-                <h2 className="text-xl font-medium mt-8">
-                    Information We Collect
-                </h2>
+        <h2 className="text-xl font-medium mt-8">Information We Collect</h2>
 
-                <h3 className="text-lg mt-4">
-                    Personal Information
-                </h3>
-                <p className="mt-8 text-muted-foreground">
-                    When you register for an account or use our services, we may collect personal information that can identify you, such as your name, email address, and payment information.
-                </p>
+        <h3 className="text-lg mt-4">Personal Information</h3>
+        <p className="mt-8 text-muted-foreground">
+          When you inquire about our services, request a quote, or become a
+          client, we may collect personal information such as your name, email
+          address, phone number, business details, and payment information.
+        </p>
 
-                <h3 className="text-lg font-medium mt-12">
-                    Non-Personal Information
-                </h3>
-                <p className="mt-8 text-muted-foreground">
-                    We may also collect non-personal information about your use of the service, such as IP addresses, browser types, referring URLs, and other technical data.
-                </p>
+        <h3 className="text-lg font-medium mt-12">Non-Personal Information</h3>
+        <p className="mt-8 text-muted-foreground">
+          We also collect non-personal information like browser type, device
+          information, IP address, and pages visited to help us understand how
+          our website is used and improve your experience.
+        </p>
 
-                <h3 className="text-lg font-medium mt-8">
-                    Cookies and Tracking Technologies
-                </h3>
-                <p className="mt-8">
-                    We use cookies and similar tracking technologies to collect and store information about your interactions with our website. You can manage your cookie preferences through your browser settings.
-                </p>
+        <h3 className="text-lg font-medium mt-8">
+          Cookies and Tracking Technologies
+        </h3>
+        <p className="mt-8">
+          We use cookies and similar technologies to keep our site running
+          smoothly, personalize content, and measure marketing performance.
+          You can manage or disable cookies via your browser settings.
+        </p>
 
-                <h2 className="text-xl font-medium mt-12">
-                    How We Use Your Information
-                </h2>
+        <h2 className="text-xl font-medium mt-12">
+          How We Use Your Information
+        </h2>
 
-                <h3 className="text-lg mt-8">
-                    Provide and Improve Services
-                </h3>
-                <div className="mt-8">
-                    We use the information we collect to:
-                    <ul className="list-disc ml-8 text-muted-foreground">
-                        <li>Provide, operate, and maintain our services.</li>
-                        <li>Improve and personalize your experience.</li>
-                        <li>Process transactions and manage your account.</li>
-                    </ul>
-                </div>
+        <h3 className="text-lg mt-8">To Provide and Improve Services</h3>
+        <div className="mt-8">
+          We use your information to:
+          <ul className="list-disc ml-8 text-muted-foreground">
+            <li>Deliver our marketing, development, and MarTech services.</li>
+            <li>Improve and customize your experience with us.</li>
+            <li>Process payments and manage client accounts.</li>
+          </ul>
+        </div>
 
-                <h3 className="text-xl font-medium mt-12">
-                    Communication
-                </h3>
-                <div className="mt-8">
-                    We may use your information to:
-                    <ul className="list-disc text-muted-foreground ml-8">
-                        <li>Send you updates, promotional materials, and other information related to our services.</li>
-                        <li>Respond to your inquiries and provide customer support.</li>
-                    </ul>
-                </div>
+        <h3 className="text-xl font-medium mt-12">Communication</h3>
+        <div className="mt-8">
+          We may use your contact details to:
+          <ul className="list-disc text-muted-foreground ml-8">
+            <li>
+              Send project updates, proposals, and service-related information.
+            </li>
+            <li>Share insights, resources, or offers relevant to your goals.</li>
+            <li>Respond to your inquiries and provide support.</li>
+          </ul>
+        </div>
 
-                <h3 className="text-lg mt-8">
-                    Analytics and Research
-                </h3>
-                <div className="mt-8">
-                    We use non-personal information for analytical purposes, such as:
-                    <ul className="list-disc text-muted-foreground ml-8">
-                        <li>Monitoring and analyzing usage trends and preferences.</li>
-                        <li>Conducting research and improving our services.</li>
-                    </ul>
-                </div>
+        <h3 className="text-lg mt-8">Analytics and Research</h3>
+        <div className="mt-8">
+          We use aggregated, non-personal data for:
+          <ul className="list-disc text-muted-foreground ml-8">
+            <li>Measuring campaign performance and ROI.</li>
+            <li>Improving our strategies and technical solutions.</li>
+          </ul>
+        </div>
 
-                <h2 className="text-xl font-medium mt-12">
-                    How We Share Your Information
-                </h2>
+        <h2 className="text-xl font-medium mt-12">
+          How We Share Your Information
+        </h2>
 
-                <h3 className="text-lg mt-8">
-                    Service Providers
-                </h3>
-                <p className="mt-8 text-muted-foreground">
-                    We may share your information with third-party service providers who assist us in operating our services, such as payment processors, email services, and hosting providers.
-                </p>
+        <h3 className="text-lg mt-8">Service Providers</h3>
+        <p className="mt-8 text-muted-foreground">
+          We work with trusted third-party providers—such as payment processors,
+          hosting services, analytics platforms, and email marketing tools—who
+          only receive the data they need to perform their services.
+        </p>
 
-                <h3 className="text-lg mt-8">
-                    Legal Requirements
-                </h3>
-                <p className="mt-8 text-muted-foreground">
-                    We may disclose your information if required to do so by law or in response to valid requests by public authorities.
-                </p>
+        <h3 className="text-lg mt-8">Legal Requirements</h3>
+        <p className="mt-8 text-muted-foreground">
+          We may disclose information if required by law, regulation, or legal
+          request, or to protect the rights and safety of Schmooze Media, our
+          clients, and others.
+        </p>
 
-                <h3 className="text-lg mt-8">
-                    Business Transfers
-                </h3>
-                <p className="mt-8 text-muted-foreground">
-                    In the event of a merger, acquisition, or sale of all or a portion of our assets, your information may be transferred to the acquiring entity.
-                </p>
+        <h3 className="text-lg mt-8">Business Transfers</h3>
+        <p className="mt-8 text-muted-foreground">
+          If Schmooze Media undergoes a merger, acquisition, or sale of assets,
+          your information may be transferred as part of that process.
+        </p>
 
-                <h2 className="text-xl font-medium mt-12">
-                    Data Security
-                </h2>
-                <p className="mt-8 text-muted-foreground">
-                    We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, loss, or alteration. However, no method of transmission over the internet or method of electronic storage is 100% secure.
-                </p>
+        <h2 className="text-xl font-medium mt-12">Data Security</h2>
+        <p className="mt-8 text-muted-foreground">
+          We implement strong security measures—including encryption,
+          restricted access, and regular system monitoring—to protect your
+          information. However, no online system is completely risk-free.
+        </p>
 
-                <h2 className="text-xl font-medium mt-12">
-                    Data Retention
-                </h2>
-                <p className="mt-8 text-muted-foreground">
-                    We retain your personal information for as long as necessary to fulfil the purposes for which it was collected, comply with our legal obligations, resolve disputes, and enforce our agreements.
-                </p>
+        <h2 className="text-xl font-medium mt-12">Data Retention</h2>
+        <p className="mt-8 text-muted-foreground">
+          We keep your information for as long as it’s needed to provide
+          services, meet legal obligations, resolve disputes, or enforce
+          agreements.
+        </p>
 
-                <h2 className="text-xl font-medium mt-12">
-                    Your Rights and Choices
-                </h2>
+        <h2 className="text-xl font-medium mt-12">Your Rights and Choices</h2>
 
-                <h3 className="text-lg mt-8">
-                    Access and Update
-                </h3>
-                <p className="mt-8 text-muted-foreground">
-                    You have the right to access and update your personal information. You can do this by logging into your account and updating your profile settings.
-                </p>
+        <h3 className="text-lg mt-8">Access and Update</h3>
+        <p className="mt-8 text-muted-foreground">
+          You can access, update, or correct your personal information by
+          contacting us directly.
+        </p>
 
-                <h3 className="text-lg mt-8">
-                    Opt-Out
-                </h3>
-                <p className="mt-8 text-muted-foreground">
-                    You can opt out of receiving promotional emails from us by following the unsubscribe instructions in those emails. You may also contact us directly to opt out.
-                </p>
+        <h3 className="text-lg mt-8">Opt-Out</h3>
+        <p className="mt-8 text-muted-foreground">
+          You can opt out of marketing communications at any time using the
+          unsubscribe link in our emails or by contacting us.
+        </p>
 
-                <h3 className="text-lg mt-8">
-                    Data Deletion
-                </h3>
-                <p className="mt-8 text-muted-foreground">
-                    You have the right to request the deletion of your personal information. Please contact us at support@linkify.com to make this request.
-                </p>
+        <h3 className="text-lg mt-8">Data Deletion</h3>
+        <p className="mt-8 text-muted-foreground">
+          You may request the deletion of your personal data by emailing
+          support@schmoozemedia.com.
+        </p>
 
-                <h2 className="text-xl font-medium mt-12">
-                    Children&apos;s Privacy
-                </h2>
-                <p className="mt-8 text-muted-foreground">
-                    Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children under 18. If we become aware that we have collected personal information from a child under 18, we will take steps to delete such information.
-                </p>
+        <h2 className="text-xl font-medium mt-12">Children&apos;s Privacy</h2>
+        <p className="mt-8 text-muted-foreground">
+          Our services are intended for businesses and individuals aged 18 and
+          over. We do not knowingly collect data from minors.
+        </p>
 
-                <h2 className="text-xl font-medium mt-12">
-                    International Data Transfers
-                </h2>
-                <p className="mt-8 text-muted-foreground">
-                    Your information may be transferred to and processed in countries other than your own. We will ensure that appropriate safeguards are in place to protect your personal information when it is transferred across borders.
-                </p>
+        <h2 className="text-xl font-medium mt-12">
+          International Data Transfers
+        </h2>
+        <p className="mt-8 text-muted-foreground">
+          If your data is transferred outside your country, we ensure
+          appropriate protections are in place, consistent with applicable
+          privacy laws.
+        </p>
 
-                <h2 className="text-xl font-medium mt-12">
-                    Changes to This Privacy Policy
-                </h2>
-                <p className="mt-8 text-muted-foreground">
-                    We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on our website and updating the &quot;Last updated&quot; date at the top of this page.
-                </p>
+        <h2 className="text-xl font-medium mt-12">
+          Changes to This Privacy Policy
+        </h2>
+        <p className="mt-8 text-muted-foreground">
+          We may update this policy to reflect changes in laws, technology, or
+          our services. Updates will be posted on this page with a revised
+          &quot;Last updated&quot; date.
+        </p>
 
-                <h2 className="text-xl font-medium mt-12">
-                    Contact Us
-                </h2>
-                <p className="mt-8 text-muted-foreground">
-                    If you have any questions or concerns about this Privacy Policy, please contact us at support@linkify.io.
-                </p>
+        <h2 className="text-xl font-medium mt-12">Contact Us</h2>
+        <p className="mt-8 text-muted-foreground">
+          If you have any questions about this Privacy Policy or how your data
+          is handled, please email us at support@schmoozemedia.com.
+        </p>
 
-                <p className="mt-8 font-medium">
-                    By using Linkify, you acknowledge that you have read, understood, and agree to the terms of this Privacy Policy.
-                </p>
-            </AnimationContainer>
-        </MaxWidthWrapper>
-    );
+        <p className="mt-8 font-medium">
+          By using Schmooze Media’s services, you acknowledge that you have read
+          and agree to this Privacy Policy.
+        </p>
+      </AnimationContainer>
+    </MaxWidthWrapper>
+  );
 };
 
 export default Privacy;

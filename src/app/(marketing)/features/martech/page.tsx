@@ -39,10 +39,10 @@ const MarTeachPage = () => {
                         </p>
                         <div className="flex items-center justify-center gap-x-4 mt-8">
                             <Button asChild>
-                                <Link href="/dashboard">🔧 Build My Engine</Link>
+                                <Link href="/resources/help">🔧 Build My Engine</Link>
                             </Button>
                             <Button asChild>
-                                <Link href="/blog">Get Martech Strategy Call</Link>
+                                <Link href="/resources/help">Get Martech Strategy Call</Link>
                             </Button>
                         </div>
                     </div>
@@ -54,7 +54,7 @@ const MarTeachPage = () => {
                             <div className="-m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
                                 <BorderBeam size={250} duration={12} delay={9} />
                                 <Image
-                                    src="/assets/dashboard-sm.png"
+                                    src="/assets/dashboard-sm.svg"
                                     alt="Advanced analytics for your business"
                                     width={800}
                                     height={600}
@@ -175,23 +175,9 @@ const MarTeachPage = () => {
                                 Whether you sell SaaS, services, or sandals - we align your message, your audience, and your data to make marketing effortless and scalable.
                             </p>
                             <div className="mt-6">
-                                <Drawer>
-                                    <Button asChild>
-                                        <DrawerTrigger className="btn">Show Me the Blueprint</DrawerTrigger>
-                                    </Button>
-                                    <DrawerContent>
-                                        <DrawerHeader>
-                                            <DrawerTitle>Settings</DrawerTitle>
-                                            <DrawerDescription>Adjust your preferences</DrawerDescription>
-                                        </DrawerHeader>
-                                        <div className="p-4">
-                                            Drawer main content goes here.
-                                        </div>
-                                        <DrawerFooter>
-                                            <Button asChild><DrawerClose className="btn fill-red">Close</DrawerClose></Button>
-                                        </DrawerFooter>
-                                    </DrawerContent>
-                                </Drawer>
+                                <Button asChild>
+                                    <Link href="/resources/help" className="btn">Get Started</Link>
+                                </Button>
                             </div>
                         </div>
                     </LampContainer>

@@ -26,15 +26,15 @@ const MarketingPage = () => {
                         </p>
                         <div className="flex items-center justify-center gap-x-4 mt-8">
                             <Button asChild>
-                                <Link href="/dashboard">
+                                <Link href="/resources/help">
                                     Get started
                                 </Link>
                             </Button>
-                            <Button variant="outline" asChild>
+                            {/* <Button variant="outline" asChild>
                                 <Link href="/blog">
                                     Learn more
                                 </Link>
-                            </Button>
+                            </Button> */}
                         </div>
                     </div>
                 </AnimationContainer>
@@ -102,7 +102,7 @@ const MarketingPage = () => {
                             </p>
                             <div className="mt-6">
                                 <Button asChild>
-                                    <Link href="/auth/sign-up" className="flex items-center">
+                                    <Link href="/resources/help" className="flex items-center">
                                         Get started <Sparkle className="w-4 h-4 ml-2" />
 
                                     </Link>

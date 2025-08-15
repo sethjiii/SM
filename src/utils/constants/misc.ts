@@ -302,27 +302,26 @@ export const developmentSteps = [
 
 export const Testimonials = [
     {
-        img: "https://randomuser.me/api/portraits/men/1.jpg", // This is the avatar
-        quote: "This tool is a lifesaver! Managing and tracking my links has never been easier. A must-have for anyone dealing with numerous links.", // Review text
-        name: "Sanskar Seth", // Name of the reviewer
-        role: "User", // You can set a default role or add the actual role if available
-        username: "@michaelsmith", // Username of the reviewer
+        img: "https://randomuser.me/api/portraits/men/32.jpg",
+        quote: "We thought we needed just ads. Schmooze gave us a story. Our campaign didn’t just bring clicks — it built a tribe. In three months, our brand went from unknown to unavoidable.",
+        name: "Aarav Mehta",
+        role: "Founder",
+        username: "@brewandbeyond",
     },
     {
-        img: "https://randomuser.me/api/portraits/women/1.jpg",
-        quote: "Very useful app! It has streamlined my workflow considerably. A few minor bugs, but overall a great experience.",
-        name: "Ankit Tanwar",
-        role: "User",
-        username: "@ankittanwar",
+        img: "https://randomuser.me/api/portraits/women/45.jpg",
+        quote: "Before Schmooze, our leads were slipping through the cracks. Now, our funnels run like clockwork — automated follow-ups, data-backed decisions, and a dashboard that feels like cheating.",
+        name: "Priya Kapoor",
+        role: "COO",
+        username: "@talentsphere",
     },
     {
-        img: "https://randomuser.me/api/portraits/men/2.jpg",
-        quote: "I've been using this app daily for months. The insights and analytics it provides are invaluable. Highly recommend it!",
-        name: "Ashish Trivedi",
-        role: "User",
-        username: "@ashishtrivedi",
+        img: "https://randomuser.me/api/portraits/men/28.jpg",
+        quote: "We’ve worked with agencies that delivered pretty websites. Schmooze delivered a platform that scaled from 100 to 15,000 users without breaking a sweat — and still looks gorgeous.",
+        name: "David Fernandez",
+        role: "CEO",
+        username: "@homelyft",
     },
+];
 
-    // Add other reviews similarly...
-] as const;
 
