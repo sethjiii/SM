@@ -6,7 +6,7 @@ import MagicBadge from "@/components/ui/magic-badge";
 import MagicCard from "@/components/ui/magic-card";
 import { COMPANIES, PROCESS } from "@/utils";
 import { Testimonials } from "@/utils/constants/misc";
-import { ArrowRightIcon, PhoneCallIcon} from "lucide-react";
+import { ArrowRightIcon, PhoneCallIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Cover } from "@/components/ui/cover";
@@ -84,7 +84,7 @@ const HomePage = () => {
                         </p>
                         <div className="flex items-center justify-center whitespace-nowrap gap-4 z-100">
                             <Button asChild>
-                                <Link href="/auth/sign-in" className="flex items-center">
+                                <Link href="/resources/help" className="flex items-center">
                                     Contact Us
                                     <PhoneCallIcon className="w-4 h-4 ml-2" />
                                     <ArrowRightIcon className="w-4 h-4 ml-2" />
@@ -211,9 +211,11 @@ const HomePage = () => {
                 </p>
 
                 <div className="relative z-20 flex flex-wrap items-center justify-center gap-4 pt-4">
-                    <button className="rounded-md bg-sky-600 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-sky-700 focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none">
-                        Contact the Tribe
-                    </button>
+                    <Link href="/resources/help">
+                        <button className="rounded-md bg-sky-600 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-sky-700 focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none">
+                            Contact the Tribe
+                        </button>
+                    </Link>
                 </div>
 
                 {/* overlay */}
@@ -303,7 +305,7 @@ const HomePage = () => {
                     </div>
                 </AnimationContainer>
             </MaxWidthWrapper>
-            
+
             {/* CTA Section */}
             <MaxWidthWrapper className="mt-20 max-w-[100vw] overflow-x-hidden scrollbar-hide">
                 <AnimationContainer delay={0.1}>
@@ -316,10 +318,12 @@ const HomePage = () => {
                                 We combine creative design, innovative development, and strategic marketing to help your brand thrive in the digital world.
                             </p>
                             <div className="mt-6">
-                                <Button>
-                                    Get Started
-                                    <ArrowRightIcon className="w-4 h-4 ml-2" />
-                                </Button>
+                                <Link href="/resources/help">
+                                    <Button>
+                                        Get Started
+                                        <ArrowRightIcon className="w-4 h-4 ml-2" />
+                                    </Button>
+                                </Link>
                             </div>
                         </div>
                     </LampContainer>
